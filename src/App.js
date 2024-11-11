@@ -5,6 +5,7 @@ import Header from './Component/Header/Header';
 import Form from './Component/Form';
 
 import user from './user.json';
+import Characters from './Component/Characters/Characters';
 
 class App extends Component {
   render () {
@@ -12,7 +13,8 @@ class App extends Component {
       <div className="App">
         
         <Header {...user} />
-        <Form />
+        <Characters />
+        {/* <Form /> */}
       </div>
     );
   }

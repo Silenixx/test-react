@@ -2,13 +2,16 @@ import React from "react";
 import logo from '../../logo.svg';
 import './Header.css';
 
-const Header =  props => {
-    console.log(props)
+const Header =  ({name, city, status}) => {
     return (
         <header className="header-header">
           <img src={logo} className="header-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            name : {name}
+            <br/>
+            city : {city}
+            <br/>
+            status : {status}
           </p>
           <a
             className="header-link"
